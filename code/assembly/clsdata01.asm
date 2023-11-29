@@ -2,11 +2,14 @@
 		
 		ld de,0
 		ld b,4
-loop3:	ld hl,$4000
+loop3:
+		ld hl,$4000
 		push bc
 		ld b,192
-loop2:	ld c,32
-loop1:	ld a,(de)
+loop2:
+		ld c,32
+loop1:
+		ld a,(de)
 		and (hl)
 		ld (hl),a
 		inc hl
